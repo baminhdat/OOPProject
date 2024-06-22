@@ -58,7 +58,7 @@ public class GameScreen extends JPanel implements Runnable {
             }
             if(stage.stageOver){
                 while(true){
-                    if(System.nanoTime()-time_for_render>1000000000.0){
+                    if(System.nanoTime()-time_for_render>3000000000.0){
                         break;
                     }
                 }
@@ -150,12 +150,6 @@ public class GameScreen extends JPanel implements Runnable {
     boolean isInMap = false;
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-//        offX -= stage.player.speed*stage.player.directionX;
-//        offY -= stage.player.speed*stage.player.directionY;
-//        stage.player.completedMovingCheck();
-//        for(Minion m : stage.minions) {
-//            m.completedMovingCheck();
-//        }
         int lowX;
         int upX;
         int lowY;

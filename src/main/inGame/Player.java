@@ -58,7 +58,6 @@ public class Player extends Entity {
             toMoveX = 0;
             isMovingX = 0;
             directionX = 0;
-            //System.out.println(coorX+" "+coorY);
         } else {
             isMovingX += directionX * speed;
         }
